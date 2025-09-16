@@ -49,7 +49,7 @@ export default function Scanner() {
     setScanResult(decodedText);
     try {
       setIsLoading(true);
-      const res = await fetch(`http://127.0.0.1:8000/scan/${decodedText}`);
+      const res = await fetch(`https://barcode-6x3r.onrender.com/scan/${decodedText}`);
       const data = await res.json();
       setProduct(data);
       setError(null);
