@@ -8,7 +8,8 @@ app = FastAPI()
 # Allow requests from your React frontend (running on Vite default: http://localhost:5173)
 origins = [
     "http://localhost:5173",
-    "http://127.0.0.1:5173"
+    "http://127.0.0.1:5173",
+    "https://barcode-sand.vercel.app"
 ]
 
 app.add_middleware(
